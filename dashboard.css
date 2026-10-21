@@ -53,13 +53,18 @@ body {
 }
 
 #welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: 600;
+    font-size: larger;
+    color: #7C3AED;
     width: 100%;
     height: 12%;
     border-bottom: 1px solid #EBE5F0;
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(8px);
-    display: flex;
-    align-items: center;
     padding: 0 2rem;
 }
 
