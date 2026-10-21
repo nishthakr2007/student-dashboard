@@ -1,0 +1,237 @@
+/** {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    
+    background-color: #F6F4F9;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #2D2438;
+}
+
+#sidebar {
+    width: 10vw;
+    min-width: 160px;
+    height: 100vh;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: #FFFFFF;
+    border-right: 1px solid #EBE5F0;
+}
+
+.list-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    list-style: none;
+}
+
+.list-content li {
+    padding: 0.75rem 1.2rem;
+    color: #7A6F8B;
+    font-weight: 500;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border-radius: 0.75rem;
+    margin: 0.4rem 0.6rem;
+}
+
+.list-content li:hover {
+    background-color: #F0EBF7;
+    color: #7B42BC;
+    transform: translateX(3px);
+}
+
+
+
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#timer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#motivation{
+    background-color: aquamarine;
+    width: 30vw;
+    height: 100vh;
+    margin-right: 0px;
+
+}
+
+#timerBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-bottom: 12px;
+}
+
+#selectTime{
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+
+
+.btn{
+    height: 50px;
+    width: 100px;
+}
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    background-color: #F6F4F9;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #2D2438;
+}
+
+#sidebar {
+    width: 10vw;
+    min-width: 160px;
+    height: 100vh;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: #FFFFFF;
+    border-right: 1px solid #EBE5F0;
+}
+
+.list-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    list-style: none;
+}
+
+.list-content li {
+    padding: 0.75rem 1.2rem;
+    color: #7A6F8B;
+    font-weight: 500;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border-radius: 0.75rem;
+    margin: 0.4rem 0.6rem;
+}
+
+.list-content li:hover {
+    background-color: #F0EBF7;
+    color: #7B42BC;
+    transform: translateX(3px);
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+#timer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F4F9;
+}
+
+#motivation {
+    background-color: #FFFFFF;
+    width: 30vw;
+    min-width: 280px;
+    height: 100vh;
+    border-left: 1px solid #EBE5F0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#timerBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    border: 4px solid #E2D9EC;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 25px -5px rgba(123, 66, 188, 0.08);
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2D2438;
+}
+
+#selectTime {
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+#selectTime input,
+#selectTime select {
+    padding: 0.5rem 0.75rem;
+    border: 1.5px solid #E2D9EC;
+    border-radius: 0.75rem;
+    background-color: #FAFAF9;
+    color: #2D2438;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+#selectTime input:focus,
+#selectTime select:focus {
+    border-color: #8B5CF6;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.12);
+}
+
+.btn {
+    height: 48px;
+    width: 120px;
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25);
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #7C3AED 0%, #6D28D9 100%);
+    box-shadow: 0 6px 16px rgba(124, 58, 237, 0.35);
+}
+
+.btn:active {
+    transform: scale(0.96);
+}
